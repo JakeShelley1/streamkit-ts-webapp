@@ -1,0 +1,217 @@
+body {
+  background-color: #0e0e10;
+  font-size: 15px;
+  color: #fff;
+}
+
+.pv2-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.bg { background-color: #0e0e10 }
+.bg-secondary { background-color: #17161b }
+
+.text-color { color: #46474D }
+
+.b--primary { border-color: #9146ff }
+.hover-bg-light:hover { background-color: #f7f7fa }
+.hover-bg-dark:hover { background-color: #0e0e10 }
+.primary { color: #9146ff }
+.bg-primary { background-color: #9146ff }
+.f5 { font-size: 15px }
+
+.darken {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.text {
+  max-width: 90%;
+}
+
+.darken:hover {
+  -webkit-filter: brightness(90%);
+}
+
+.flex-grow-1 {
+  flex: 1;
+}
+
+.shadow {
+  box-shadow: 0px 8px 16px #0000000f,0px 16px 32px #0000000a,0px 32px 64px #00000005;
+}
+
+.gap {
+  gap: 15px;
+}
+
+.gap-small {
+  gap: 10px;
+}
+.gap-large { 
+  gap:  20px;
+}
+.gradient-string {
+  background: -webkit-linear-gradient(right, #9146ff, #0e198c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hidden { visibility: hidden }
+
+.container {
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-reverse {
+  flex-flow: column-reverse; 
+}
+
+.items-center-small {
+  align-items: center;
+}
+
+@media screen and (min-width: 60em) {
+  .cta {
+    width: fit-content;
+    justify-content: start;
+  }
+  .container {
+    flex-direction: row;
+  }
+
+  .container-reverse {
+    flex-flow: row;
+  }
+
+  .items-center-small {
+    align-items: initial;
+  }
+  
+  .text {
+    max-width: 400px;
+  }
+
+  .text.header {
+    max-height: 450px;
+  }
+}
+
+
+
+/*Loading styles*/
+.lds-dual-ring {
+  display: inline-block;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.large-lds-dual-ring {
+  width: 56px;
+  height: 56px;
+  border: 8px solid rgba(145, 20, 255, 0.15);
+  border-top-color: #9114FF;
+  border-radius: 50%;
+  position: relative;
+  animation: loader-rotate 1s linear infinite;
+  top: 50%;
+  margin: -28px auto 0 auto;
+}
+
+/*@keyframes loader-rotate {
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: loader-rotate;
+}*/
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.coupon {
+  width: 200px;
+  height: 90px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #9114FF;
+  padding: 10px 10px;
+  position: relative;
+  transform: rotate(-15deg);
+}
+
+
+.coupon::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  right: -20px;
+  border-radius: 20px;
+  z-index: 1;
+  top: 35px;
+  background-color: #0e198c;
+  width: 30px;
+}
+
+.coupon::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  left: -20px;
+  border-radius: 20px;
+  z-index: 1;
+  top: 35px;
+  background-color: #0e198c;
+  width: 30px;
+}
+
+.ClipItem .overlay {
+  transition: opacity 150ms;
+}
+
+.ClipItem .overlay:hover {
+  opacity: 0.3;
+}
+
+.br5 { border-radius: 2rem }
